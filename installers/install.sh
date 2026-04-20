@@ -33,7 +33,7 @@ then
     curl -o hangover.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/hangover.py && python3 hangover.py
 elif [ $version = 3 ]
 then
-    curl -o non-root.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/non-root.py && python3 non-root.py
+    curl -o non-root.py https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/non-root.js && node non-root.js
 elif [ $version = 4 ]
 then
     curl -o root.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/root.py && python3 root.py
