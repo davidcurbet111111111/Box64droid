@@ -40,11 +40,11 @@ function installGlibc() {
 function scripts() {
   run("wget -q https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/scripts/native/box64droid");
   run("wget -q https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/scripts/native/box64droid.py");
-  run("wget -q https://raw.githubusercontent.com/Ilya114/Box64Droid/main/scripts/native/start-box64.py");
+  run("wget -q https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/scripts/native/start-box64.js");
   run("wget -q https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks");
 
   run("chmod +x box64droid winetricks");
-  run("mv box64droid box64droid.py start-box64.py winetricks $PREFIX/bin/");
+  run("mv box64droid box64droid.py start-box64.js winetricks $PREFIX/bin/");
 
   // Safe symlinks
   run("ln -sf $PREFIX/glibc/opt/wine/bin/wine $PREFIX/glibc/bin/wine");
