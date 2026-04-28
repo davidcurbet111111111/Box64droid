@@ -4,9 +4,8 @@ echo "Updating packages and installing dependencies to run installer"
 echo ""
 apt-get update &>/dev/null
 apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade &>/dev/null
-apt install python --no-install-recommends -y &>/dev/null
+apt install nodejs --no-install-recommends -y &>/dev/null
 clear
-pkg install nodejs
 echo "Hello, this is a Box64Droid installer, please select need version to install:"
 echo ""
 echo "Actual version:"
@@ -40,7 +39,7 @@ then
     curl -o root.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/root.py && python3 root.py
 elif [ $version = 5 ]
 then
-    curl -o virgl.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/virgl.py && python3 virgl.py
+    curl -o virgl.js https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/virgl.js && node virgl.js
 elif [ $version = 6 ]
 then
     rm install
