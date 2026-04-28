@@ -36,7 +36,7 @@ then
     curl -o non-root.js https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/non-root.js && node non-root.js
 elif [ $version = 4 ]
 then
-    curl -o root.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/root.py && python3 root.py
+    curl -o root.js https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/root.js && node root.js
 elif [ $version = 5 ]
 then
     curl -o virgl.js https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/virgl.js && node virgl.js
